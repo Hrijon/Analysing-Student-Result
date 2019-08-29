@@ -2,20 +2,38 @@ textarea{
     margin-top: 30px;
     margin-left: 10px;
  }
+
 .content{
     margin-left: 0px;
-    background-color: grey;
-}
-
-h2{
-    text-align: center;
+    background-color: lightgrey;
+    height: 700px;
+    font-size: 25px;
 }
 
 .form{
     margin-top: 50px;
     margin-left:20px;
 }
+
 nav{
-    background-color: lightgrey;
+    background-color: grey;
     height: 60px;
+    text-align: center;
+}
+
+table, th, td {
+    padding: 10px;
+    margin: 50px;
+    border-block-end-style: groove;
+    border: 1px solid black; 
+    border-collapse: collapse;
+}
+
+td{
+    width: 100px;
+    text-align: center;
+}
+
+#name{
+    width: 200px;
 }

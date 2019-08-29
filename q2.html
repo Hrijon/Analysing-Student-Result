@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <HTML>
     <head>
-       <title>Q2 Analysing</title> 
+        <meta charset=utf-8 />
+        <meta name="viewport" content="width=device-width">  
+        
+        <title>Q2 Analysing</title> 
 
        <link rel="stylesheet" type="text/css" href="q2Style.css"/>
     </head>
@@ -14,12 +17,36 @@
         <div class="form">
             <form id="myForm" action="">
                 Enter Student Name: <input id="text1" type="text" name="name" /><br/><br/>   
-                Enter Student Marks: <input id="text2" type="text" name="name"/>   
+                Enter Student Marks: <input id="text2" type="text" name="marks"/>   
                 <input type="button" id="submitButton" value="Submit" onclick="add_element_to_array()"/>  <br/> <br/>      
             </form>              
                  
-            <textarea id = "Result" rows="15" cols="60">This is Text Area...</textarea>
+            <!-- <textarea id="Marks"   rows="15" cols="60">This is Text Area...</textarea>
+            <textarea id="Names"   rows="15" cols="60">This is Text Area...</textarea> -->
+            
+        </div>
 
+        <div class="table">
+            <table id="myTable" > 
+                    <thead>
+                        <tr>
+                            <th class="table-sortable:ignorecase">Srudent Name</th>
+                            <th class="student-marks">Marks</th>
+                            <th class="table-sortable:ignorecase">Grade</th>
+                            <th class="percentage">Percentage <br> (100%)</th>
+                        </tr>
+                    </thead> 
+                    <tbody>
+                        <tr class="altRow">
+                        <td id="Names"></td>
+                        <td id="Marks"></td>    
+                        <td id="grade"></td>    
+                        <td id="percent"></td>    
+
+                        </tr>
+                    </tbody>
+
+            </table>
         </div>
 
         <script type="text/javascript" src="q2Script.js">
