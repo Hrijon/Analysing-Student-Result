@@ -17,7 +17,10 @@ function add_name()
     document.getElementById("text1").value = "";
 
     document.getElementById("Names").innerHTML =studentNames;
+    console.log("name: " + studentNames);
+
 }
+
 
 function add_marks()
 {
@@ -27,38 +30,50 @@ function add_marks()
     document.getElementById("text2").value = "";
 
     document.getElementById("Marks").innerHTML = studentMarks;
+    console.log("Marks: " + studentMarks);
+    
 
-    if (studentMarks >= 80)
+    if (studentMarks >= 80 && studentMarks < 100)
     {
+        // console.log("Marks: " + studentMarks);
+
         document.getElementById("grade").innerHTML = "H.D";
         document.getElementById("percent").innerHTML = studentMarks + "%";
     }
 
-    if (70 <= studentMarks < 80)
+     if (70 <= studentMarks && studentMarks < 80)
     {
         document.getElementById("grade").innerHTML = "D";
         document.getElementById("percent").innerHTML = studentMarks + "%";
     }
 
-    if (60 <= studentMarks < 70)
+    else if (60 <= studentMarks && studentMarks < 70)
     {
         document.getElementById("grade").innerHTML = "Cr";
         document.getElementById("percent").innerHTML = studentMarks + "%";
     }
     
-    if (50 <= studentMarks <60)
+    else if (50 <= studentMarks && studentMarks <60)
     {
         document.getElementById("grade").innerHTML = "P";
         document.getElementById("percent").innerHTML = studentMarks + "%";
     }
     
-    if (studentMarks <50)
+    else if (studentMarks <50)
     {
         document.getElementById("grade").innerHTML = "N";
         document.getElementById("percent").innerHTML = studentMarks + "%";
     }
     
+    else if(studentMarks >100)
+    {
+        alert("Invalid marks. Try again!!")
+    }
     
+    else{
+        console.log("Out of bound");
+
+    }
 }
 
 function table_heading()
